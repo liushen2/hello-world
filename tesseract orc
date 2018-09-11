@@ -1,0 +1,8 @@
+# -*- coding:utf-8 -*-
+__author__ = 'cyc'
+
+from PIL import Image
+import pytesseract
+
+text = pytesseract.image_to_string(Image.open('E:\Python2.7\pyton2.7学习记录\\a.jpg'),lang='chi_sim')
+print(text)
